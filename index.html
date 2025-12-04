@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Times de Futebol Ficcionais</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #007bff;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        select, button {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .patrocinadores {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .patrocinador {
+            background-color: #e9ecef;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Mundo dos Times de Futebol Ficcionais</h1>
+        <p>Explore times incríveis, assista jogos e vote no melhor jogador!</p>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Sobre os 4 Times Ficcionais</h2>
+            <p>Apresentamos quatro times de futebol totalmente ficcionais, criados para diversão e competição virtual. Cada time tem sua própria história, estilo de jogo e jogadores lendários. Aqui vai uma breve descrição de cada um:</p>
+            <ul>
+                <li><strong>Dragões Azuis</strong>: Um time agressivo e ofensivo, conhecido por seus contra-ataques rápidos. Fundado em uma montanha mítica, eles dominam o ar com passes precisos.</li>
+                <li><strong>Lobos Vermelhos</strong>: Defensores implacáveis, com uma defesa sólida como uma muralha. Originários de florestas densas, eles caçam vitórias com estratégia e força.</li>
+                <li><strong>Falcões Dourados</strong>: Ágeis e criativos, especialistas em jogadas aéreas. Voam alto nos céus imaginários, surpreendendo adversários com dribles inovadores.</li>
+                <li><strong>Tubarões Prateados</strong>: Velozes e imprevisíveis, como predadores do oceano. Mergulham fundo em táticas submarinas para afundar a oposição.</li>
+            </ul>
+            <p>Esses times participam de torneios virtuais, e você pode acompanhar suas aventuras aqui!</p>
+        </section>
+
+        <section id="video-patrocinadores">
+            <h2>Vídeo do Jogo e Patrocinadores</h2>
+            <p>Assista a um jogo emocionante entre os Dragões Azuis e os Lobos Vermelhos! Clique no link abaixo para ver no YouTube:</p>
+            <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" style="color: #007bff; font-weight: bold;">Assista ao Jogo: Dragões Azuis vs Lobos Vermelhos (Vídeo Fictício)</a></p>
+            <p>Este vídeo é patrocinado por empresas ficcionais que apoiam o esporte virtual:</p>
+            <div class="patrocinadores">
+                <div class="patrocinador">
+                    <h3>Energia Mítica Ltda.</h3>
+                    <p>Fornecendo energia infinita para jogadores virtuais.</p>
+                </div>
+                <div class="patrocinador">
+                    <h3>Chute Perfeito Corp.</h3>
+                    <p>Equipamentos de chute precisos para times ficcionais.</p>
+                </div>
+                <div class="patrocinador">
+                    <h3>Gol Virtual Inc.</h3>
+                    <p>Tecnologia para marcar gols impossíveis.</p>
+                </div>
+                <div class="patrocinador">
+                    <h3>Estádio Imaginário S.A.</h3>
+                    <p>Construindo arenas para batalhas épicas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="formulario">
+            <h2>Vote no Melhor Jogador</h2>
+            <p>Use o formulário abaixo para votar no seu jogador favorito entre os 4 times. Todos os jogadores estão listados para facilitar a escolha.</p>
+            <form action="#" method="post" onsubmit="alert('Voto enviado! Obrigado por participar.'); return false;">
+                <label for="time">Escolha o Time:</label>
+                <select id="time" name="time" required>
+                    <option value="">Selecione um time</option>
+                    <option value="dragoes">Dragões Azuis</option>
+                    <option value="lobos">Lobos Vermelhos</option>
+                    <option value="falcoes">Falcões Dourados</option>
+                    <option value="tubaroes">Tubarões Prateados</option>
+                </select>
+
+                <label for="jogador">Escolha o Melhor Jogador:</label>
+                <select id="jogador" name="jogador" required>
+                    <optgroup label="Dragões Azuis">
+                        <option value="dragao1">Jogador 1 (Dragões)</option>
+                        <option value="dragao2">Jogador 2 (Dragões)</option>
+                        <option value="dragao3">Jogador 3 (Dragões)</option>
+                        <option value="dragao4">Jogador 4 (Dragões)</option>
+                        <option value="dragao5">Jogador 5 (Dragões)</option>
+                        <option value="dragao6">Jogador 6 (Dragões)</option>
+                        <option value="dragao7">Jogador 7 (Dragões)</option>
+                        <option value="dragao8">Jogador 8 (Dragões)</option>
+                        <option value="dragao9">Jogador 9 (Dragões)</option>
+                        <option value="dragao10">Jogador 10 (Dragões)</option>
+                        <option value="dragao11">Jogador 11 (Dragões)</option>
+                    </optgroup>
+                    <optgroup label="Lobos Vermelhos">
+                        <option value="lobo1">Jogador 1 (Lobos)</option>
+                        <option value="lobo2">Jogador 2 (Lobos)</option>
+                        <option value="lobo3">Jogador 3 (Lobos)</option>
+                        <option value="lobo4">Jogador 4 (Lobos)</option>
+                        <option value="lobo5">Jogador 5 (Lobos)</option>
+                        <option value="lobo6">Jogador 6 (Lobos)</option>
+                        <option value="lobo7">Jogador 7 (Lobos)</option>
+                        <option value="lobo8">Jogador 8 (Lobos)</option>
+                        <option value="lobo9">Jogador 9 (Lobos)</option>
+                        <option value="lobo10">Jogador 10 (Lobos)</option>
+                        <option value="lobo11">Jogador 11 (Lobos)</option>
+                    </optgroup>
+                    <optgroup label="Falcões Dourados">
+                        <option value="falcao1">Jogador 1 (Falcões)</option>
+                        <option value="falcao2">Jogador 2 (Falcões)</option>
+                        <option value="falcao3">Jogador 3 (Falcões)</option>
+                        <option value="falcao4">Jogador 4 (Falcões)</option>
+                        <option value="falcao5">Jogador 5 (Falcões)</option>
+                        <option value="falcao6">Jogador 6 (Falcões)</option>
+                        <option value="falcao7">Jogador 7 (Falcões)</option>
+                        <option value="falcao8">Jogador 8 (Falcões)</option>
+                        <option value="falcao9">Jogador 9 (Falcões)</option>
+                        <option value="falcao10">Jogador 10 (Falcões)</option>
+                        <option value="falcao11">Jogador 11 (Falcões)</option>
+                    </optgroup>
+                    <optgroup label="Tubarões Prateados">
+                        <option value="tubarao1">Jogador 1 (Tubarões)</option>
+                        <option value="tubarao2">Jogador 2 (Tubarões)</option>
+                        <option value="tubarao3">Jogador 3 (Tubarões)</option>
+                        <option value="tubarao4">Jogador 4 (Tubarões)</option>
+                        <option value="tubarao5">Jogador 5 (Tubarões)</option>
+                        <option value="tubarao6">Jogador 6 (Tubarões)</option>
+                        <option value="tubarao7">Jogador 7 (Tubarões)</option>
+                        <option value="tubarao8">Jogador 8 (Tubarões)</option>
+                        <option value="tubarao9">Jogador 9 (Tubarões)</option>
+                        <option value="tubarao10">Jogador 10 (Tubarões)</option>
+                        <option value="tubarao11">Jogador 11 (Tubarões)</option>
+                    </optgroup>
+                </select>
+
+                <button type="submit">Enviar Voto</button>
+            </form>
+        </section>
+
+        <section id="formulario-google">
+            <h2>Formulário Google para Seleção de Jogadores por Time</h2>
+            <p>Para uma experiência interativa com lógica condicional, use o formulário Google incorporado abaixo. Ele permite escolher entre Time 1 ou Time 2, e mostra os 11 jogadores do time selecionado (usando seções no Google Forms).</p>
+            <p><strong>Instruções para o Formulário Google:</strong> Este iframe aponta para um formulário Google fictício. Para torná-lo funcional, crie um formulário real no Google Forms seguindo estes passos:</p>
+            <ul>
+                <li>Vá para <a href="https://forms.google.com" target="_blank">Google Forms</a> e crie um novo formulário.</li>
+                <li>Adicione uma pergunta de múltipla escolha: "Escolha o time:" com opções "Time 1" e "Time 2".</li>
+                <li>Ative lógica condicional: Para "Time 1", vá para uma seção "Time 1"; para "Time 2", vá para "Time 2".</li>
+                <li>Na seção "Time 1", adicione 11 perguntas (uma por jogador, ex.: "Selecione o jogador:" com opções "Jogador 1" a "Jogador 11").</li>
+                <li>Mesmo para "Time 2" (jogadores "Jogador A" a "Jogador K").</li>
+                <li>Publique o formulário e substitua o "src" do iframe abaixo pelo link de incorporação do seu formulário (clique em "Enviar" > "Incorporar" no Google Forms para obter o código iframe).</li>
+            </ul>
+            <!-- Placeholder para o iframe do Google Forms. Substitua o src pelo link real do seu formulário. -->
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSficticio-link-aqui/viewform?embedded=true" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 20px; background-color: #007bff; color: white;">
+        <p>&copy; 2023 Times Ficcionais. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
